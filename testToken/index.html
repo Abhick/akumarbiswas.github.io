@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../tableauREST.com/css/jquery.toast.css">
+	<link rel="stylesheet" type="text/css" href="../tableauREST.com/js/json-viewer/json-viewer.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../tableauREST.com/css/icomoon/style.css">
+	<link rel="stylesheet" type="text/css" href="../tableauREST.com/css/filterExplorer.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../tableauREST.com/js/json-viewer/json-viewer.js"></script>
+	<script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
+	<script type="text/javascript" src="../tableauREST.com/js/jquery.toast.js"></script>
+	<script type="text/javascript" src="../tableauREST.com/js/filterExplorer.js"></script>
+	<script src="js/filterExplorer.js"></script>
+
+</head>
+
+<body onload="initViz();">
+	<div id="btnDiv" class="visibility">
+		<button id="getData" title="Save" onclick="getUnderlyingData()" class="" disabled><i class="icon icon-db-send"></i><span class="icon-label">Save</span>
+        </button>
+
+	</div>
+	<div id="vizContainer"></div>
+	<div id="dataTarget" style="margin-top:20px;"></div>
+	<!-- Modal -->
+	<div class="modal fade" id="jsnvwrrmodal" role="dialog" data-backdrop="static" data-keyboard="false">
+
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">X</button>
+					<h4 class="modal-title">Filter Details</h4>
+				</div>
+				<div class="modal-body">
+					
+					<!-- <input type="text" id="txt-save-cohort" class="form-control" />
+					<label class="error hide-error">*Cohort name cannot be blank</label> -->
+					<pre id="json-renderer"></pre>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="submitJSON" class="btn btn-primary" data-dismiss="modal">Submit</button>
+					<button id="closeModal" class="btn btn-default" onclick="CallCancel()" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	</div>
+	<div id="dialog"></div>
+</body>
+
+</html>

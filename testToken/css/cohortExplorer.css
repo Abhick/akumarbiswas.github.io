@@ -1,0 +1,83 @@
+body {
+  font-family: "Roboto" !important;
+}
+
+i.icon.icon-db-send {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 100;
+  margin-right: 6px;
+}
+
+i.icon.icon-db-send:hover {
+  color: #000000;
+  font-size: 11px;
+  font-weight: 100;
+  margin-right: 6px;
+}
+
+span.icon-label {
+  position: relative;
+  top: -3px;
+  font-family: "Roboto" !important;
+  color: #333;
+}
+
+button#getData {
+  font-size: 12px;
+  position: absolute;
+  left: 30%;
+  padding: 4.5px 10px;
+  background: transparent;
+  border: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal button#getData:hover {
+  background-color: #e6e6e6;
+}
+
+.novisibility {
+  visibility: hidden;
+}
+
+.visibile {
+  visibility: visible;
+}
+
+.modal-body {
+  position: relative;
+  padding: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.label-danger {
+  color: #d9534f;
+}
+
+.show-error {
+  display: block;
+}
+
+.hide-error {
+  display: none;
+}
+
+label.error.show-error {
+  color: #df0303;
+  font-style: italic;
+}
+
+input#txt-save-cohort {
+  margin: 10px 0;
+}
+
+iframe
+{
+width:1400px!important;
+height:900px!important;
+visibility:visible!important;
+display:block!important;
+}
